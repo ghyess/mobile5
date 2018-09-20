@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>신한카드</title>
+     <meta name="viewport" content = "width=device-width, initial-scale=1.0, user-scalable=no">
+<!--  파비콘 세팅      -->
+    <link rel="icon" type="image/png" href="./ico/ico_favicon96.ico" sizes="16x16">
+<!--      메타포 아이콘       -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!--     폰트 링크   -->
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Poiret+One" rel="stylesheet">
+<!--  css 연결 링크 -->
+   <link rel="stylesheet" href="default.css">
+   <link rel="stylesheet" href="hd.css">
+   <link rel="stylesheet" href="slider.css">
+   <link rel="stylesheet" href="content.css">
+   <link rel="stylesheet" href="ft.css">
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="pagewrap">
+        <header id="hd">
+            <div class="logo_inner">
+                <h1 class="logo"><img src="./img/logo.png" alt=""></h1>
+                <label href="" class="menu_bt"><i class="fas fa-bars"></i></label>
+            </div>
+            <nav id="gnb">
+               <div class="boxUtil">
+                      <button for="" type="button" id="login">로그인</button>
+                      <button for="" type="button" id="join">회원가입</button>
+                      <label for="" id="close"><i class="fas fa-times"></i></label>
+               </div>
+                <div class="gnb_inner">
+                   <ul class="menu">
+                       <li><a href="index.html" class="home"><i class="fas fa-home"></i></a></li>
+                       <li id="first"><strong><label>마이페이지</label></strong></li>
+                       <li id="sec"><strong><label>카드</label></strong></li>
+                       <li id="third"><strong><label>혜택</label></strong></li>
+                       <li id="four"><strong><label>신한 FAN</label></strong></li>
+                       <li id="fifth"><strong><label>고객센터</label></strong></li>
+                   </ul>
+                   <div id="subBox">
+                        <div class="sub_inner on" id="my_page">
+                            <ul class="sub">
+                                <li class="sb_tit">
+                                    <strong><a href="">마이홈</a></strong>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">이용대금 명세서</a></strong>
+                                    <ul class="sub_list dep1">
+                                        <li><a href="">이번달 명세서</a></li>
+                                        <li><a href="">다음달 결제예정내역</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">이용내역조회</a></strong>
+                                    <ul class="sub_list dep2">
+                                        <li><a href="">카드 이용내역</a></li>
+                                        <li><a href="">교통카드 이용내역</a></li>
+                                        <li><a href="">후불하이패스 이용내역</a></li>
+                                        <li><a href="">개인사업자 매출내역</a></li>
+                                        <li><a href="">할인혜택 이용내역</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">내 정보 관리</a></strong>
+                                    <ul class="sub_list dep3">
+                                        <li><a href="">내 카드 관리</a></li>
+                                        <li><a href="">카드비밀번호/고유번호 오류해제</a></li>
+                                        <li><a href="">회원정보변경</a></li>
+                                        <li><a href="">결제계좌변경</a></li>
+                                        <li><a href="">결제일변경</a></li>
+                                        <li><a href="">온라인회원 탈퇴</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sub_inner" id="menu_card">
+                            <ul class="sub">
+                                <li class="sb_tit">
+                                    <strong><a href="">신한카드 DEEP이란?</a></strong>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">카드 추천</a></strong>
+                                    <ul class="sub_list dep4">
+                                        <li><a href="">인기/추천카드</a></li>
+                                        <li><a href="">트렌드 카드</a></li>
+                                        <li><a href="">라이프 스테이지</a></li>
+                                        <li><a href="">내게 맞는 카드찾기</a></li>
+                                        <li><a href="">365 신속한 발급</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">프리미엄 카드</a></strong>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">드림카드</a></strong>
+                                    <ul class="sub_list dep5">
+                                        <li><a href="">신용카드</a></li>
+                                        <li><a href="">체크카드</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">디자인카드</a></strong>
+                                    <ul class="sub_list dep6">
+                                        <li><a href="">시그니처카드</a></li>
+                                        <li><a href="">갤러리S</a></li>
+                                        <li><a href="">캐릭터카드</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">디지털카드</a></strong>
+                                    <ul class="sub_list dep7">
+                                        <li><a href="">디지털 맞춤</a></li>
+                                        <li><a href="">셀프초이스</a></li>
+                                        <li><a href="">모바일 카드</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">카드발급상황조회</a></strong>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">카드사용등록</a></strong>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">선택형서비스 조회/변경</a></strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sub_inner" id="benefits">
+                            <ul class="sub">
+                                <li class="sb_tit">
+                                    <strong><a href="">포인트</a></strong>
+                                    <ul class="sub_list dep1">
+                                        <li><a href="">포인트조회</a></li>
+                                        <li><a href="">포인트전환</a></li>
+                                        <li><a href="">포인트 전환내역조회</a></li>
+                                        <li><a href="">마이신한포인트 안내</a></li>
+                                        <li><a href="">포인트플러스 이용현황</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">Pay Dream 내역조회</a></strong>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">카드 혜택</a></strong>
+                                    <ul class="sub_list dep1">
+                                        <li><a href="">할인혜택 이용내역</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">이벤트</a></strong>
+                                    <ul class="sub_list dep1">
+                                        <li><a href="">진행중 이벤트</a></li>
+                                        <li><a href="">지난 이벤트</a></li>
+                                        <li><a href="">응모내역조회</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+</div>
+                        <div class="sub_inner" id="fan">
+                            <ul class="sub">
+                                <li class="sb_tit">
+                                    <strong><a href="">신한 FAN 소개</a></strong>
+                                    <ul class="sub_list dep1">
+                                        <li><a href="">FAN이란?</a></li>
+                                        <li><a href="">FAN 가입 안내</a></li>
+                                        <li><a href="">FAN페이 온라인 결제 가이드</a></li>
+                                        <li><a href="">FAN페이 오프라인 결제 가이드</a></li>
+                                        <li><a href="">모바일 단독카드</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">제휴 서비스</a></strong>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">FUN</a></strong>
+                                    <ul class="sub_list dep1">
+                                        <li><a href="">운세</a></li>
+                                        <li><a href="">웹툰</a></li>
+                                        <li><a href="">매거진</a></li>
+                                        <li><a href="">eBook</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+</div>
+                        <div class="sub_inner" id="cs">
+                            <ul class="sub">
+                                <li class="sb_tit">
+                                    <strong><a href="">온라인 고객상담</a></strong>
+                                    <ul class="sub_list dep1">
+                                        <li><a href="">자주하는질문</a></li>
+                                        <li><a href="">Talk상담</a></li>
+                                        <li><a href="">칭찬하기</a></li>
+                                        <li><a href="">상담신청</a></li>
+                                        <li><a href="">상담내역</a></li>
+                                        <li><a href="">수화상담서비스</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">ARS 이용안내</a></strong>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">카드재발급</a></strong>
+                                    <ul class="sub_list dep1">
+                                        <li><a href="">카드재발급 신청</a></li>
+                                        <li><a href="">카드재발급 신청내역</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">카드분실/해제</a></strong>
+                                    <ul class="sub_list dep1">
+                                        <li><a href="">카드분실신고</a></li>
+                                        <li><a href="">분실신고내역</a></li>
+                                        <li><a href="">분실신고해제</a></li>
+                                        <li><a href="">타사카드 일괄분실신고</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">뉴스/공지</a></strong>
+                                    <ul class="sub_list dep1">
+                                        <li><a href="">공지사항</a></li>
+                                        <li><a href="">상품·서비스변경 안내</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">공인인증서 안내</a></strong>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">개인정보 처리방침</a></strong>
+                                </li>
+                                <li class="sb_tit">
+                                    <strong><a href="">이용약관</a></strong>
+                                </li>
+                            </ul>
+</div>
+                  </div>
+              </div>
+          </nav>
+        </header>
+        <div class="gnb_bg"></div>
+        <figure id="vs">
+            <div class="btnBox">
+                <span><a href="">금융+<i class="fas fa-dollar-sign"></i></a></span>
+                <span><a href="">자동차<br>금융+ <i class="fas fa-car-side"></i></a></span>
+            </div>
+            <div class="btn_list">
+                <label for="" class="Btn on" data-value="0"></label>
+                <label for="" class="Btn" data-value="1"></label>
+                <label for="" class="Btn" data-value="2"></label>
+                <label for="" class="Btn" data-value="3"></label>
+                <label for="" class="Btn" data-value="4"></label>
+                <label for="" class="Btn" data-value="5"></label>
+                <label for="" class="stop" data-value="6"></label>
+            </div>
+            <ul class="imgBox">
+                <li class="imgFrame" data-value="0"><img src="./img/main6.jpg" alt=""></li>
+                <li class="imgFrame" data-value="1"><img src="./img/main1.jpg" alt=""></li>
+                <li class="imgFrame" data-value="2"><img src="./img/main2.jpg" alt=""></li>
+                <li class="imgFrame" data-value="3"><img src="./img/main3.jpg" alt=""></li>
+                <li class="imgFrame" data-value="4"><img src="./img/main4.jpg" alt=""></li>
+                <li class="imgFrame" data-value="5"><img src="./img/main5.jpg" alt=""></li>
+                
+            </ul>
+        </figure>
+        <section class="con" id="card">
+            <h3 class="conTit"><i class="far fa-credit-card"></i>&nbsp;&nbsp;카드</h3>
+            <section id="card_box">
+            <div class="card_inner">
+                <ul class="card_list">
+                    <li>
+                       <a href="">
+                        <img src="./img/card1.png" alt="">
+                        <div class="text_box">
+                            <strong><span class="tit_card">신한카드 Deep On Platinum+</span></strong>
+                            <span class="txt_con">간편결제 최대 20% 생활 서비스 20% 결제일 할인</span>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                        <img src="./img/card2.png" alt="">
+                        <div class="text_box">
+                            <strong><span class="tit_card">신한카드 Deep Store</span></strong>
+                            <span class="txt_con">생활쇼핑 가맹점 최대 15% 할인</span>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                        <img src="./img/card3.png" alt="">
+                        <div class="text_box">
+                            <strong><span class="tit_card">신한카드 Deep Dream Platinum+</span></strong>
+                            <span class="txt_con">속 깊은 혜택을 더한</span>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <img src="./img/card4.png" alt="">
+                        <div class="text_box">
+                            <strong><span class="tit_card">신한카드 Deep Oil</span></strong>
+                            <span class="txt_con">속 깊은 주유 혜택, 직접 고른 주유소에서 10% 할인</span>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                        <img src="./img/card5.png" alt="">
+                        <div class="text_box">
+                            <strong><span class="tit_card">아시아나 신한카드 Air 1.5</span></strong>
+                            <span class="txt_con">아시아나 마일리지 1,000원 당 1.5 마일리지 적립</span>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <img src="./img/card6.png" alt="">
+                        <div class="text_box">
+                            <strong><span class="tit_card">신한카드 Noon</span></strong>
+                            <span class="txt_con">점심시간 요식업종 30% 택시 20% 할인</span>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                        <img src="./img/card7.png" alt="">
+                        <div class="text_box">
+                            <strong><span class="tit_card">신한카드 YOLOⓘ</span></strong>
+                            <span class="txt_con">직접 고른 6개 선택처에서 20·15·10% 할인</span>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <img src="./img/card8.png" alt="">
+                        <div class="text_box">
+                            <strong><span class="tit_card">SOL Deep Dream 신한카드 체크</span></strong>
+                            <span class="txt_con">전월 실적/적립 한도없이 전 가맹점 0.2% 포인트 적립</span>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </section>
+            <div class="button_list">
+                <ul class="list">
+                    <li><a href="">카드발급상황조회</a></li>
+                    <li><a href="">카드사용등록</a></li>
+                    <li><a href="">친구에게 카드추천</a></li>
+                    <li><a href="">연회비 100% 지원</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="con" id="living">
+           <h3 class="conTit"><i class="fas fa-file-invoice-dollar"></i>&nbsp;&nbsp;생활요금 자동납부</h3>
+            <div class="button_list">
+                <ul class="list">
+                    <li><a href="">아파트관리비</a></li>
+                    <li><a href="">도시가스요금</a></li>
+                    <li><a href="">전기요금</a></li>
+                    <li><a href="">전화요금</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="con" id="customer">
+           <h3 class="conTit"><i class="fas fa-comments"></i>&nbsp;&nbsp;고객센터</h3>
+            <div class="button_list">
+                <ul class="list">
+                    <li><a href="">자주하는 질문</a></li>
+                    <li><a href="">상담신청</a></li>
+                    <li><a href="">ARS 이용안내</a></li>
+                    <li><a href="">카드 분실신고</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="con" id="notice">
+            <h3 class="conTit"><i class="fas fa-bullhorn"></i>&nbsp;&nbsp;공지사항</h3>
+            <div class="noti_box">
+                <ul class="list">
+                    <li><a href="">추석 연휴에 따른 우편 명세서 배송지연 및 일부거래 청...</a></li>
+                    <li><a href="">신한카드 FDS업무 담당자를 사칭한 보이스피싱 추정 S...</a></li>
+                    <li><a href="">마음을 읽다 마음을 잇다 신한카드 아름인 굿프렌즈 모집</a></li>
+                </ul>
+            </div>
+        </section>
+        <footer id="ft">
+            <nav id="fnb">
+                <ul>
+                    <li class="first"><a href="">고객센터</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">신한카드 APP +</a></li>
+                </ul>
+            </nav>
+            <div class="icon_box">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-blogger"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fas fa-comment-dots"></i></a>
+            </div>
+            <div class="adress">
+                <p>서울특별시 중구 을지로 100(을지로 2가, 파인에비뉴 A동)</p>
+                <p>대표이사 임영진｜사업자등록번호 202-81-48079</p>
+            </div>
+            <div class="best_site">
+               <a href="http://www.kwacc.or.kr/WACertificate/WAMark" target="_blank">웹접근성 우수 사이트</a>
+                <a href="http://www.kwacc.or.kr/WACertificate/WAMark" target="_blank" class="mark"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

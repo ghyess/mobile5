@@ -1,0 +1,198 @@
+@charset "utf-8";
+/*     con 공통   */
+        .con {
+            width: 100%;
+            height: 330px;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .conTit {
+            position: relative;
+            margin-top: 27px;
+            padding: 0 27px;
+            font-size: 1.12em;
+            color: #121741;
+        }
+        
+        .button_list {
+            overflow: hidden;
+            padding:  0 27px;
+        }
+        .list {
+            overflow: hidden;
+            margin-top: 6px;
+            margin-left: -3px;
+            margin-right: -3px;
+        }
+        
+/*     카드 컨텐츠   */
+        #card .far { font-size: 1em; }
+        
+        #card #card_box {
+            margin-top: 9px;
+            width: 100%;
+            height: 172px;
+            position: relative;
+            box-sizing: border-box;
+        }
+        #card .card_inner {
+            padding: 0 19px 17px;
+            overflow-x: scroll;
+        }
+        #card .card_list {
+            width: 1248px;
+            height: 172px;
+            position: relative;
+        }
+        #card .card_list li {
+            float: left;
+            overflow: hidden;
+        }
+        #card .card_list a {
+            width: 140px;
+            margin: 0 8px;
+        }
+        #card .card_list img {
+            display: block;
+            width: 100%;
+            height: 90px;
+        }
+        
+        #card .card_list .text_box {
+            overflow: hidden;
+            margin-top: 7px;
+        }
+        #card .card_list span {
+            display: block;
+            color: #333;
+            font-size: 0.95em;
+            clear: both;
+        }
+        #card .card_list .tit_card {
+            color: #121741;
+            height: 36px;
+        }
+        #card .card_list .txt_con {
+            font-size: 0.78em;
+            line-height: 15px;
+            color: #848484;
+            height: 35px;
+        }
+        
+/*    카드 목록    */
+        #card .button_list .list li {
+            width: 50%;
+            margin-top: 6px;
+            padding: 0 3px;
+            float: left;
+            box-sizing: border-box;
+        }
+        #card .button_list .list li a {
+            height: 45px;
+            position: relative;
+            padding: 0 20px 0 16px;
+            background: #fff;
+            color: #333;
+            font-size: 0.85em;
+            line-height: 44px;
+        }
+        #card .button_list .list li a::after {
+            content: "〉";
+            color: #00b3f0;
+            font-weight: bold;
+            position: absolute;
+            right: 6%;
+        }
+
+/*     생활요금       */
+        #living {
+            height: 150px;
+        }
+        #living .button_list .list li {
+            width: 50%;
+            margin-top: 6px;
+            padding: 0 3px;
+            float: left;
+            box-sizing: border-box;
+        }
+        #living .button_list .list li a {
+            height: 45px;
+            position: relative;
+            padding: 0 20px 0 16px;
+            background: #fff;
+            color: #333;
+            font-size: 0.85em;
+            line-height: 44px;
+        }
+        #living .button_list .list li a::after {
+            content: "〉";
+            color: #00b3f0;
+            font-weight: bold;
+            position: absolute;
+            right: 6%;
+        }
+        #living .fas {
+            font-size: 1.0em;
+        }
+        
+        /*     고객센터       */
+        #customer {
+            height: 150px;
+        }
+        #customer .button_list .list li {
+            width: 50%;
+            margin-top: 6px;
+            padding: 0 3px;
+            float: left;
+            box-sizing: border-box;
+        }
+        #customer .button_list .list li a {
+            height: 45px;
+            position: relative;
+            padding: 0 20px 0 16px;
+            background: #fff;
+            color: #333;
+            font-size: 0.85em;
+            line-height: 44px;
+        }
+        #customer .button_list .list li a::after {
+            content: "〉";
+            color: #00b3f0;
+            font-weight: bold;
+            position: absolute;
+            right: 6%;
+        }
+        #customer .fas {
+            font-size: 1.0em;
+        }
+        
+/*   공지사항     */
+        #notice .fas {
+            font-size: 1.0em;
+        }
+        #notice {
+            height: 200px;
+        }
+        #notice .noti_box .list li {
+            width: 100%;
+            margin-top: 6px;
+            padding: 0 3px;
+            float: left;
+            box-sizing: border-box;
+        }
+        #notice .noti_box .list li a {
+            height: 45px;
+            position: relative;
+            padding: 0 20px 0 16px;
+            background: #fff;
+            color: #333;
+            font-size: 0.85em;
+            line-height: 44px;
+        }
+        #notice .noti_box .list li a::after {
+            content: "〉";
+            color: #00b3f0;
+            font-weight: bold;
+            position: absolute;
+            right: 6%;
+        }

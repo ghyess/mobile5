@@ -1,0 +1,105 @@
+@charset "utf-8";
+/*    푸터영역    */
+#ft {
+            width: 100%;
+            height: 240px;
+            position: relative;
+            clear: both;
+            background: #444449;
+        }
+        #ft #fnb {
+            box-sizing: border-box;
+            width: 100%;
+            padding-top: 27px;
+        }
+        #ft #fnb ul {
+            margin: 0 auto;
+            clear: both;
+            width: 85%;
+            height: 20px;
+        }
+        #ft #fnb li {
+            float: left;
+            width: auto;
+            margin-left: 24px;
+            position: relative;
+        }
+        #ft #fnb li a{
+            color: #BDBDBD;
+            font-size: 0.85em;
+            font-weight: bold;
+            text-align: center;
+        }
+        #ft #fnb li::after {
+            content: "｜";
+            position: absolute;
+            left: -18px;
+            top:-2px;
+            color: #BDBDBD;
+        }
+        #ft #fnb .first::after {
+            content: "";
+        }
+        
+/*   아이콘 박스     */
+        .icon_box {
+            position: relative;
+            width: 62%;
+            height: 60px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            clear: both;
+            padding-top: 10px;
+        }
+        .icon_box a {
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin: 10px;
+            text-align: center;
+            color: #BDBDBD;
+            font-size: 1.3em;
+            line-height: 2;
+        }
+        
+/*    카피라이트    */
+        #ft .adress {
+            position: relative;
+            width: 80%;
+            height: 50px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding-top: 25px;
+        }
+        #ft .adress p {
+            text-align: center;
+            color: #BDBDBD;
+            font-size: 0.8em;
+        }
+        
+/*    웹접근성 우수 사이트    */
+        #ft .best_site {
+            width: 100%;
+            height: 60px;
+            position: relative;
+            background: #353539;
+            margin-top: 6%;
+        }
+        #ft .best_site a {
+            font-size: 0.88em;
+            line-height: 4;
+            text-align: center;
+            color: #BDBDBD;
+            margin-right: 10%;
+        }
+        #ft .best_site .mark {
+            position: absolute;
+            top: 10px;
+            right: 22%;
+            width: 60px;
+            height: 40px;
+            background: url(ico/ico_best_site.png);
+            background-repeat: no-repeat;
+            background-size: 58px 38px;
+            margin-right: 0;
+        }

@@ -1,0 +1,199 @@
+@charset "utf-8";
+/*       헤더        */
+       #hd {
+           width: 100%;
+           height: 50px;
+           background-color: #292c35;
+           box-sizing: border-box;
+           position: relative;
+           z-index: 100;
+       }
+       #hd .logo {
+           width: 135px;
+           height: 35px;
+           padding: 14px 0 0 0;
+           vertical-align: top;
+           margin: 0 auto;
+       }
+       #hd .logo img {
+           display: block;
+           width: 130px;
+           height: 22px;
+           margin: 0 auto;
+           vertical-align: top;
+       }
+       #hd .menu_bt {
+           width: 35px;
+           height: 35px;
+           position: absolute;
+           top: 10px;
+           right: 10px;
+       }
+       #hd .menu_bt .fas {
+           display: block;
+           margin-top: 5px;
+           color: #fff;
+           font-size: 1.5em;
+           text-align: center;
+       }
+        
+/*   컬랩시블     */
+       #gnb {
+           z-index: 100;
+           box-sizing: border-box;
+           right: -100%;
+           width: 94%;
+           height: 736px;
+           background: #fff;
+           position: absolute;
+           top: 0;
+           transition: 0.7s;
+       }
+        #hd #gnb.on {
+            right: 0;
+        }
+        .gnb_inner {
+            float: right;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        
+        #gnb .boxUtil {
+            float: right;
+            width: 90%;
+            height: 42px;
+            position: relative;
+        }
+        #gnb .boxUtil button {
+            border: 1px solid #121741;
+            color: #121741;
+            font-weight: bold;
+            font-size: 0.75em;
+            width: 70px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: transparent;
+            position: absolute;
+            left: 15%;
+            top: 16%;
+        }
+        #gnb .boxUtil #join {
+            left: 37%;
+        }
+        #gnb .boxUtil #close {
+            width: 34px;
+            height: 34px;
+            position: absolute;
+            right: 0;
+            top: 16%;
+            font-size: 1.8em;
+            color: #121741;
+        }
+        
+/*    메뉴 정리    */
+        .menu {
+            width: 85px;
+            height: 100%;
+            float: left;
+            background: #121741;
+            position: absolute;
+            top: 0;
+            z-index: 100;
+        }
+        #gnb .menu>li {
+            position: relative;
+            width: 85px;
+            height: 55px;
+            box-sizing: border-box;
+        }
+        #gnb .menu>li::after {
+            display: block;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 19%;
+            width: 54px;
+            height: 1px;
+            background: #656D96;
+        }
+        #gnb .menu>li label {
+            display: block;
+            text-align: center;
+            color: #fff;
+            font-size: 0.8em;
+            line-height: 4;
+        }
+        #gnb .menu>li.on label {
+            background: #fff;
+            color: #333;
+        }
+        #gnb .menu>li>a {
+            font-size: 1.6em;
+            color: #fff;
+            text-align: center;
+            line-height: 2.6;
+        }
+        
+/*   서브 메뉴     */
+        #subBox {
+            float: right;
+            height: 100%;
+            width: 79.5%;
+        }
+
+        #subBox .sub_inner {
+            display: none;
+        }
+        #subBox .sub_inner.on {
+            display: block;
+        }
+
+        #subBox .sub {
+            border-top: 2px solid #121741;
+        }
+        
+        #subBox .sb_tit {
+            width: 100%;
+            height: auto;
+            border-top: 1px solid #E6E6E6;
+            line-height: 46px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        #subBox .sb_tit:nth-child(1) {
+            border-top: 0;
+        }
+        #subBox .sb_tit>strong a::after {
+            display: block;
+            content: "∨";
+            position: absolute;
+            right: 5%;
+            top: 0;
+            color: #00b3f0;
+        }
+        .sb_tit>strong a {
+            color: #121741;
+            position: relative;
+            height: 46px;
+            padding: 0 15px;
+        }
+        
+        #gnb .sub_list {
+            display: none;
+        }
+
+        #gnb .sub_list li {
+            height: 46px;
+            border-top: 1px solid #656D96;
+        }
+        #gnb .sub_list li a {
+            width: 100%;
+            font-size: 0.9em;
+            text-indent: 8%;
+            color: #333;
+            font-weight: bold;
+        }
+        #gnb .sub_list li a::before {
+            content: '-　';
+        }
